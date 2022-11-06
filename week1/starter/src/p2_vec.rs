@@ -87,6 +87,7 @@ pub fn baseline(a: Vec4, b: Vec4) -> Vec4 {
 ///
 /// Run `cargo test vectorized` to check your answer.
 pub fn vectorized(a: Vec4, b: Vec4) -> Vec4 {
+  // cargo bench seems to be crashing my system :\
   vec4_select(vec4_gt(a, b), vec4_mul(a, b), vec4_add(a,b))
 }
 
